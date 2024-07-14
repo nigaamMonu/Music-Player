@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  
+  <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/png"/> -->
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+  <div class="player-container">
+
+    <div class="img-container">
+      <img src="./Music_pics/Angaro ka Ambar sa pic.jpg" alt="Album Art">
+    </div>
+
+    <h2 id="title">Angaro ka Ambar sa</h2>
+    <h3 id="artist">Monu Nigaam</h3>
+
+    <audio src="./Musics/Angaro ka Ambar sa.mp3" ></audio>
+
+    <!-- progress  -->
+    <div class="progress-container" id="progress-container">
+      <div class="process" id="process"></div>
+      <div class="duration-wrapper">
+        <span id="current-time">0:00</span>
+        <span id="duration">4:24</span>
+      </div>
+    </div>
+
+    <!-- controls -->
+    <div class="player-control">
+      <i class="fas fa-backward" id="prev" title="previous"></i>
+      <i class="fas fa-play main-button" id="play" title="play"></i>
+      <i class="fas fa-forward" id="next" title="next"></i>
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
